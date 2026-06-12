@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sistem Pemesanan Salon Online</title>
+<title>💖 Sistem Pemesanan Salon Online 💖</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
@@ -22,8 +22,14 @@ scroll-behavior:smooth;
 }
 
 body{
-background:#fff0f7;
+background:linear-gradient(
+180deg,
+#fff0f7,
+#ffe3f2,
+#fff8fc
+);
 color:#333;
+overflow-x:hidden;
 }
 
 .hero{
@@ -34,8 +40,26 @@ justify-content:center;
 align-items:center;
 text-align:center;
 padding:30px;
-background:linear-gradient(135deg,#ff4fa2,#ff8ec9);
+background:linear-gradient(
+135deg,
+#ff4fa2,
+#ff8ec9,
+#ffc4e3
+);
 color:white;
+position:relative;
+}
+
+.hero::before{
+content:"🌸 💖 ✨ 🎀 💅 🌷 💕";
+font-size:35px;
+margin-bottom:20px;
+}
+
+.hero::after{
+content:"💕 🌸 ✨ 💄 💖 🎀 🌷";
+font-size:35px;
+margin-top:20px;
 }
 
 .hero h1{
@@ -43,6 +67,7 @@ font-size:75px;
 font-weight:800;
 line-height:1.2;
 margin-bottom:20px;
+text-shadow:2px 2px 10px rgba(0,0,0,.15);
 }
 
 .hero p{
@@ -52,11 +77,12 @@ margin-bottom:25px;
 
 .member{
 background:rgba(255,255,255,.2);
-padding:15px 25px;
+padding:15px 30px;
 border-radius:30px;
 margin:10px;
 backdrop-filter:blur(10px);
 font-size:18px;
+font-weight:500;
 }
 
 .container{
@@ -71,8 +97,22 @@ background:white;
 padding:40px;
 border-radius:30px;
 margin-bottom:40px;
-box-shadow:0 10px 30px rgba(255,79,162,.2);
+box-shadow:0 10px 30px rgba(255,79,162,.15);
 border-left:10px solid #ff4fa2;
+position:relative;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card::after{
+content:"🌸";
+position:absolute;
+top:20px;
+right:25px;
+font-size:30px;
 }
 
 .card h2{
@@ -83,7 +123,7 @@ margin-bottom:25px;
 
 .card h3{
 color:#ff4fa2;
-margin-top:25px;
+margin-top:20px;
 margin-bottom:10px;
 }
 
@@ -98,19 +138,35 @@ padding-left:25px;
 }
 
 .code-box{
-background:#2f1039;
-color:white;
-padding:25px;
-border-radius:20px;
+background:linear-gradient(
+135deg,
+#ff4fa2,
+#ff7cbc
+);
+padding:30px;
+border-radius:25px;
+text-align:center;
+margin-top:25px;
+}
+
+.dart-btn{
+display:inline-block;
 margin-top:20px;
-overflow:auto;
+background:white;
+color:#ff4fa2;
+padding:18px 35px;
+border-radius:50px;
+font-size:18px;
+font-weight:bold;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
 }
 
 footer{
 background:#ff4fa2;
 color:white;
 text-align:center;
-padding:35px;
+padding:40px;
 font-size:18px;
 }
 
@@ -133,26 +189,25 @@ font-size:16px;
 
 </style>
 </head>
-
 <body>
 
 <section class="hero">
 
 <h1>
-💖 Sistem Pemesanan<br>
-Salon Online
+💖 Sistem Pemesanan <br>
+Salon Online 💅
 </h1>
 
 <p>
-Studi Kasus Object Oriented Programming (OOP)
+✨ Studi Kasus Object-Oriented Programming (OOP) ✨
 </p>
 
 <div class="member">
-👩 Nabila Amanda | 251410023
+👩‍💻 Nabila Amanda | 251410023
 </div>
 
 <div class="member">
-👩 Saskia Mauli Tantria | 251410034
+👩‍💻 Saskia Mauli Tantria | 251410034
 </div>
 
 </section>
@@ -164,87 +219,92 @@ Studi Kasus Object Oriented Programming (OOP)
 <h2>💖 Masalahnya</h2>
 
 <p>
-Di era digital saat ini, perkembangan teknologi telah memberikan banyak perubahan dalam kehidupan masyarakat, termasuk dalam bidang jasa kecantikan. Meskipun berbagai layanan telah beralih ke sistem digital, masih banyak salon kecantikan yang menggunakan proses reservasi secara manual. Pelanggan biasanya melakukan pemesanan melalui telepon, pesan WhatsApp, atau datang langsung ke salon untuk membuat janji layanan.
+Di era digital saat ini, perkembangan teknologi telah mengubah berbagai aspek kehidupan manusia, termasuk dalam bidang pelayanan jasa kecantikan. Meskipun berbagai layanan telah beralih ke sistem digital, masih banyak salon kecantikan yang menggunakan sistem reservasi secara manual melalui telepon, WhatsApp, maupun pelanggan yang datang langsung ke lokasi.
 </p>
 
 <p>
-Metode tersebut memang masih dapat digunakan, namun sering kali menimbulkan berbagai kendala yang mempengaruhi kualitas pelayanan dan efektivitas pengelolaan salon. Oleh karena itu, diperlukan sebuah sistem yang mampu membantu proses reservasi agar menjadi lebih cepat, akurat, dan terorganisir.
+Metode tersebut sering menimbulkan berbagai kendala yang dapat mempengaruhi kualitas pelayanan dan efektivitas pengelolaan bisnis salon. Oleh karena itu, diperlukan sebuah sistem yang mampu membantu proses reservasi agar lebih cepat, akurat, dan terorganisir.
 </p>
 
-<h3>a. Kesalahan Pencatatan Reservasi</h3>
+<h3>🌷 a. Kesalahan Pencatatan Reservasi</h3>
 
 <p>
-Dalam sistem manual, staf salon harus mencatat seluruh informasi pelanggan secara satu per satu. Proses ini memiliki risiko kesalahan yang cukup tinggi, seperti kesalahan penulisan nama pelanggan, nomor telepon yang tidak sesuai, layanan yang dipilih tidak tercatat dengan benar, maupun jadwal yang tertukar dengan pelanggan lain.
+Dalam sistem manual, staf salon harus mencatat seluruh data pelanggan secara satu per satu. Proses ini memiliki risiko kesalahan yang cukup tinggi seperti kesalahan penulisan nama pelanggan, nomor telepon, layanan yang dipilih, maupun jadwal reservasi.
 </p>
 
 <p>
-Kesalahan pencatatan tersebut dapat menyebabkan ketidaknyamanan pelanggan dan menurunkan kepercayaan terhadap pelayanan salon.
+Kesalahan pencatatan tersebut dapat menyebabkan ketidaknyamanan pelanggan dan menurunkan kualitas pelayanan salon.
 </p>
 
-<h3>b. Jadwal Pelanggan Sering Bertabrakan</h3>
+<h3>🌷 b. Jadwal Pelanggan Sering Bertabrakan</h3>
 
 <p>
-Karena tidak adanya sistem yang terintegrasi, jadwal reservasi sering kali tidak terpantau dengan baik. Akibatnya, dua atau lebih pelanggan dapat memperoleh waktu layanan yang sama. Hal ini menyebabkan antrean panjang, keterlambatan pelayanan, bahkan pembatalan reservasi yang merugikan pelanggan maupun pihak salon.
+Karena tidak adanya sistem yang terintegrasi, jadwal reservasi sering kali tidak terpantau dengan baik. Akibatnya dua atau lebih pelanggan dapat memperoleh jadwal layanan yang sama sehingga menyebabkan antrean panjang dan keterlambatan pelayanan.
 </p>
 
-<h3>c. Sulit Melacak Data dan Riwayat Pelanggan</h3>
+<h3>🌷 c. Sulit Melacak Data dan Riwayat Pelanggan</h3>
 
 <p>
-Data pelanggan yang tersimpan secara manual biasanya tersebar di berbagai media pencatatan sehingga sulit ditemukan kembali saat dibutuhkan. Salon menjadi kesulitan dalam mengetahui riwayat kunjungan pelanggan, layanan yang pernah digunakan, maupun memberikan promo khusus kepada pelanggan setia.
+Data pelanggan yang tersimpan secara manual biasanya tersebar di berbagai media pencatatan sehingga sulit ditemukan kembali ketika dibutuhkan. Hal ini membuat salon kesulitan dalam memberikan pelayanan yang lebih personal kepada pelanggan.
 </p>
 
-<h3>d. Proses Reservasi Kurang Efisien</h3>
+<h3>🌷 d. Proses Reservasi Kurang Efisien</h3>
 
 <p>
-Pelanggan harus menghubungi admin terlebih dahulu untuk menanyakan jadwal yang tersedia. Proses ini membutuhkan waktu lebih lama karena pelanggan harus menunggu balasan dari pihak salon. Selain itu, staf salon juga harus menjawab pertanyaan yang sama secara berulang sehingga pekerjaan menjadi kurang efisien.
+Pelanggan harus menghubungi admin terlebih dahulu untuk mengetahui jadwal yang tersedia. Proses ini membutuhkan waktu lebih lama karena pelanggan harus menunggu balasan dari pihak salon.
 </p>
 
 </div>
 
 <div class="card">
 
-<h2>💖 Kenapa Masalah Ini Perlu Diselesaikan dengan OOP?</h2>
+<h2>🌸 Kenapa Masalah Ini Perlu Diselesaikan dengan OOP?</h2>
 
 <p>
-Untuk mengatasi berbagai permasalahan tersebut, diperlukan sebuah sistem pemesanan salon online yang dibangun menggunakan pendekatan Object-Oriented Programming atau OOP. Pendekatan ini dipilih karena mampu memodelkan objek-objek yang ada dalam dunia nyata ke dalam bentuk program yang lebih terstruktur dan mudah dikelola.
+Untuk mengatasi berbagai permasalahan tersebut, diperlukan sebuah sistem pemesanan salon online yang dibangun menggunakan pendekatan Object-Oriented Programming (OOP). Pendekatan ini dipilih karena mampu memodelkan objek-objek yang ada dalam dunia nyata ke dalam bentuk program yang lebih terstruktur dan mudah dikelola.
 </p>
 
-<h3>a. Banyak Entitas yang Dapat Dimodelkan Sebagai Class</h3>
+<h3>💖 a. Banyak Entitas yang Dapat Dimodelkan Sebagai Class</h3>
 
 <p>
-Dalam sistem pemesanan salon online terdapat beberapa objek utama yang saling berhubungan. Objek tersebut antara lain Pelanggan, Layanan Salon, Reservasi, dan Salon. Setiap objek memiliki atribut dan fungsi yang berbeda sehingga sangat cocok untuk diterapkan menggunakan konsep class dan object pada OOP.
+Dalam sistem pemesanan salon online terdapat beberapa objek utama yang saling berhubungan.
 </p>
 
 <ul>
-<li>Pelanggan menyimpan data pelanggan.</li>
-<li>LayananSalon menyimpan informasi layanan.</li>
-<li>Reservasi menghubungkan pelanggan dengan layanan.</li>
-<li>Salon mengelola seluruh reservasi.</li>
+
+<li>👤 Pelanggan → menyimpan data pelanggan.</li>
+
+<li>💇‍♀️ LayananSalon → menyimpan nama layanan, harga, dan durasi layanan.</li>
+
+<li>📝 Reservasi → menghubungkan pelanggan dengan layanan yang dipilih.</li>
+
+<li>🏢 Salon → mengelola seluruh data reservasi.</li>
+
 </ul>
 
-<h3>b. Enkapsulasi Melindungi Data Penting</h3>
+<h3>💖 b. Enkapsulasi Melindungi Data Penting</h3>
 
 <p>
-Dengan konsep enkapsulasi, data pelanggan dan reservasi dapat disimpan dengan lebih aman. Setiap data hanya dapat diakses melalui method tertentu sehingga mengurangi kemungkinan kesalahan dalam pengolahan data.
+Dengan konsep enkapsulasi, data pelanggan dan reservasi dapat disimpan dengan lebih aman. Setiap data hanya dapat diakses melalui method tertentu sehingga risiko kesalahan pengolahan data dapat diminimalkan.
 </p>
 
-<h3>c. Mempermudah Pengembangan Sistem</h3>
+<h3>💖 c. Mempermudah Pengembangan Sistem</h3>
 
 <p>
-Jika di masa mendatang salon ingin menambahkan fitur baru seperti pembayaran online, sistem membership, promo pelanggan, maupun notifikasi otomatis, program dapat dikembangkan tanpa perlu mengubah keseluruhan struktur sistem yang telah dibuat.
+Jika di masa depan salon ingin menambahkan fitur pembayaran online, promo pelanggan, membership, maupun notifikasi otomatis, sistem dapat dikembangkan tanpa harus mengubah keseluruhan struktur program.
 </p>
 
-<h3>d. Kode Program Lebih Terstruktur</h3>
+<h3>💖 d. Kode Program Lebih Terstruktur</h3>
 
 <p>
-Penerapan OOP membuat kode program menjadi lebih rapi, mudah dibaca, mudah dipelihara, dan lebih mudah dikembangkan oleh programmer lain yang akan melanjutkan proyek tersebut.
+Penerapan OOP membuat kode program menjadi lebih rapi, mudah dipahami, mudah dipelihara, dan lebih mudah dikembangkan.
 </p>
 
 </div>
 
 <div class="card">
 
-<h2>💖 Langkah Penyelesaian Masalah</h2>
+<h2>✨ Langkah Penyelesaian Masalah</h2>
 
 <ol>
 
@@ -253,27 +313,27 @@ Mengidentifikasi permasalahan yang terjadi pada proses reservasi salon yang masi
 </li>
 
 <li>
-Menentukan objek-objek utama yang akan digunakan dalam sistem yaitu Pelanggan, LayananSalon, Reservasi, dan Salon.
+Menentukan objek utama yang akan digunakan dalam sistem yaitu Pelanggan, LayananSalon, Reservasi, dan Salon.
 </li>
 
 <li>
-Membuat class beserta atribut dan method yang sesuai dengan kebutuhan masing-masing objek.
+Membuat class beserta atribut dan method sesuai kebutuhan sistem.
 </li>
 
 <li>
-Menghubungkan setiap class menggunakan konsep Object-Oriented Programming sehingga dapat bekerja sebagai satu kesatuan sistem.
+Menghubungkan setiap class menggunakan konsep Object-Oriented Programming.
 </li>
 
 <li>
-Mengimplementasikan fitur reservasi salon yang memungkinkan pelanggan memilih layanan, mengisi data diri, dan menentukan jadwal kunjungan.
+Mengimplementasikan proses reservasi salon mulai dari pemilihan layanan hingga penyimpanan data reservasi.
 </li>
 
 <li>
-Menyimpan serta menampilkan data reservasi agar dapat dikelola dengan lebih mudah dan terorganisir.
+Menampilkan data reservasi agar dapat dikelola dengan lebih mudah dan terstruktur.
 </li>
 
 <li>
-Melakukan pengujian terhadap sistem untuk memastikan seluruh fungsi berjalan dengan baik dan sesuai dengan kebutuhan pengguna.
+Melakukan pengujian sistem untuk memastikan seluruh fitur berjalan dengan baik.
 </li>
 
 </ol>
@@ -282,21 +342,42 @@ Melakukan pengujian terhadap sistem untuk memastikan seluruh fungsi berjalan den
 
 <div class="card">
 
-<h2>💖 Implementasi Source Code Dalam Dart</h2>
+<h2>💻 Implementasi Source Code Dalam Dart</h2>
 
 <p>
 Program dibuat menggunakan bahasa pemrograman Dart dengan menerapkan konsep Object-Oriented Programming (OOP). Sistem terdiri dari beberapa class utama yaitu Pelanggan, LayananSalon, Reservasi, dan Salon.
 </p>
 
 <p>
-Setiap class memiliki atribut untuk menyimpan data dan method yang digunakan untuk menjalankan fungsi tertentu. Dengan pendekatan ini, program menjadi lebih terstruktur, mudah dipahami, serta mudah dikembangkan apabila terdapat kebutuhan baru di masa mendatang.
+Setiap class memiliki atribut untuk menyimpan data dan method yang digunakan untuk menjalankan fungsi tertentu. Dengan pendekatan ini, program menjadi lebih terstruktur, mudah dipahami, dan mudah dikembangkan apabila terdapat kebutuhan baru di masa mendatang.
 </p>
 
 <div class="code-box">
 
-<pre>
-https://dartpad.dev/5ebae6fa43ac8e4e10c98a1017659fb6
-</pre>
+<div style="font-size:60px;">
+💻✨💖🌸
+</div>
+
+<h3 style="color:white;">
+Source Code Dart
+</h3>
+
+<p style="
+color:white;
+font-size:18px;
+line-height:1.8;
+">
+
+Klik tombol di bawah ini untuk membuka implementasi source code Dart Sistem Pemesanan Salon Online.
+
+</p>
+
+<a
+href="https://dartpad.dev/5ebae6fa43ac8e4e10c98a1017659fb6"
+target="_blank"
+class="dart-btn">
+🚀 Buka Source Code Dart
+</a>
 
 </div>
 
@@ -304,31 +385,53 @@ https://dartpad.dev/5ebae6fa43ac8e4e10c98a1017659fb6
 
 <div class="card">
 
-<h2>💖 Kesimpulan</h2>
+<h2>🎀💖 Kesimpulan 💖🎀</h2>
 
 <p>
-Berdasarkan hasil analisis dan implementasi yang dilakukan, Sistem Pemesanan Salon Online mampu menjadi solusi terhadap berbagai permasalahan yang sering terjadi pada proses reservasi salon secara manual. Sistem ini membantu mengurangi kesalahan pencatatan data pelanggan, menghindari bentrokan jadwal layanan, mempercepat proses reservasi, dan meningkatkan kualitas pelayanan kepada pelanggan.
+Berdasarkan hasil analisis dan implementasi yang dilakukan, Sistem Pemesanan Salon Online mampu menjadi solusi terhadap berbagai permasalahan yang sering terjadi pada proses reservasi salon secara manual.
 </p>
 
 <p>
-Penerapan konsep Object-Oriented Programming membuat program menjadi lebih terstruktur, modular, dan mudah dikembangkan. Dengan demikian, sistem dapat terus disempurnakan sesuai kebutuhan salon di masa mendatang serta memberikan manfaat yang lebih besar bagi pelanggan maupun pihak pengelola salon.
+Sistem ini membantu mengurangi kesalahan pencatatan data pelanggan, menghindari bentrokan jadwal layanan, mempercepat proses reservasi, dan meningkatkan kualitas pelayanan kepada pelanggan.
+</p>
+
+<p>
+Penerapan konsep Object-Oriented Programming membuat program menjadi lebih terstruktur, modular, dan mudah dikembangkan untuk kebutuhan salon di masa mendatang.
 </p>
 
 </div>
 
 </div>
-
 <footer>
 
-💖 Sistem Pemesanan Salon Online 💖
+🌸💖✨ TERIMA KASIH ✨💖🌸
 
 <br><br>
 
-Nabila Amanda (251410023)
+👩‍💻 Nabila Amanda (251410023)
 
 <br>
 
-Saskia Mauli Tantria (251410034)
+👩‍💻 Saskia Mauli Tantria (251410034)
+
+<br><br>
+
+💅 Sistem Pemesanan Salon Online 💅
+
+<br>
+
+🌷 Studi Kasus Object-Oriented Programming (OOP) 🌷
+
+<br><br>
+
+✨ Website ini dibuat sebagai implementasi konsep
+Object-Oriented Programming menggunakan bahasa
+pemrograman Dart untuk menyelesaikan permasalahan
+reservasi salon secara online. ✨
+
+<br><br>
+
+💖 🌸 ✨ 🎀 💄 💅 🌷 💕 💖
 
 </footer>
 
